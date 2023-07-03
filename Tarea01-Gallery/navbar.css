@@ -15,6 +15,8 @@
     padding: 10px 30px;
     text-decoration: none;
     border: 2px solid #222121;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 .nav-enlacesigu:hover{
     background: rgb(15, 15, 15);
@@ -29,12 +31,14 @@
     display: flex;
     justify-content: space-around;
     border: 2px solid #242121;
+    margin: auto;
 }
 @media (max-width: 600px)
 {
     nav{
         background: black;
         flex-direction: column;
+        float: none; 
     }
 }
 .nav-enlace{
@@ -42,7 +46,24 @@ margin: 10px;
 }
 .navbutton{
     display: inline-block;
+    
 }
 .nav-enlacesigu{
     margin: 10px;
     }
+
+    body {
+        background-color: rgba(235, 235, 229, 0.827);
+      }
+
+      h4{
+        border: 1px solid black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        background-color: lightblue;
+        align-content: center;
+        display: inline-block;
+      }
+      
