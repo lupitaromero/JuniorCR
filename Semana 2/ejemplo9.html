@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-    <br><br>
-    <label> Seleccion Multiple</label>
-    <input type="checkbox" id="ChOpcion1" input: checked="checked"> </value>Opcion 1
+    <form action="guardado.html" method="post">
+        <label>Nombre</label>
+        <input type="text" id="txtNombre" placeholder="Ingrese un nombre">
+
+        <br><br>
+        <label>Apellido</label>
+        <input type="text" id="txtApellido">
+
+        <br><br>
+        <label>Contraseña</label>
+        <input type="password" id="txtPassword">
+
+        <br><br>
+        <label>Selección multiple</label><br>
+        <input type="checkbox" id="chOpcion1" checked onchange="cambiar(1)"> Opción 1
+        <input type="checkbox" id="chOpcion2" onchange="cambiar(2)"> Opción 2
+        <input type="checkbox" id="chOpcion3" onchange="cambiar(3)"> Opción 3
+
+        <br><br>
+        <label>Seleccione una opción</label><br>
+        <input type="radio" id="rbA" name="opciones" > Opción A
+        <input type="radio" id="rbB" name="opciones" checked> Opción B
+        <input type="radio" id="rbC" name="opciones" > Opción C
+
+
+        <br><br>
+        <label>Seleccione una opción</label><br>
+        <input type="radio" id="rbAAA" name="opciones2" > Opción AAA
+        <input type="radio" id="rbBBB" name="opciones2" > Opción BBB
+        <input type="radio" id="rbCCC" name="opciones2" > Opción CCC
+
+        <br><br>
+
+        <label>Departamentos</label>
+        <select id="cbDepartamentos">
+            <option value="0">No seleccionado</option>
+            <option value="1">San Salvador</option>
+            <option value="2">La Libertad</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Guardar">
+        <input type="button" value="Cancelar">
+        <button onclick="mensaje()">Test</button>
+    </form>
 </body>
 </html>
+<script>
+    function cambiar(num){
+        var op1 = document.getElementById("chOpcion1")
+        var op2 = document.getElementById("chOpcion2")
+        var op3 = document.getElementById("chOpcion3")
+        
+        if(num == 1){
+            if(op2.checked == true && op3.checked == true)
+                op1.checked = false
+        }
+        else if(num == 2){
+            if(op1.checked == true && op3.checked == true)
+                op2.checked = false
+        }
+        else if(num == 3){
+            if(op1.checked == true && op2.checked == true)
+                op3.checked = false
+        }
+    }
+
+    function mensaje(){
+
+        /*alert(document.querySelector("#txtApellido").value)
+        alert(document.querySelector("#chOpcion1").checked)
+        alert(document.querySelector("#chOpcion2").checked)*/
+    }
+</script>
