@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table, td, th{
+            border: 1px solid black;
+        }
+        #table1{
+            width: 400px;
+        }
+        #table2{
+            width: 350px;
+        }
+        .tablaPersonalizada{
+            background-color: cadetblue;
+        }
+        div div .tabla{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table class="tablaPersonalizada" id="table1">
+        <tbody>
+            <tr>
+                <td rowspan="2">No</td>
+                <td rowspan="2">ID</td>
+                <td colspan="2">Nombre completo</td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td>Nombre</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>HM1234</td>
+                <td>Herrera</td>
+                <td>Denny</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>Otra tabla</h1>
+    <div>
+    <div>
+        <table class="tabla" id="table2">
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    
+</body>
+</html>
