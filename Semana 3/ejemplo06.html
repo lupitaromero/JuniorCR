@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+        }
+        @media only screen and (min-width:0px) and (max-width:300px){
+            .caja{
+                background-color: red;
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width:301px) and (max-width:500px){
+            .caja{
+                background-color: blue;
+                width: 90%;
+            }
+        }
+        @media only screen and (min-width: 501px) and (max-width:800px){
+            .caja{
+                background-color: green;
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+
+    </div>
+</body>
+</html>

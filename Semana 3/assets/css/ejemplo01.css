@@ -1,0 +1,18 @@
+.caja{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    /*padding: 30px 40px 50px 60px;*/
+    padding: 30px 60px;
+    border: 5px solid black;
+    margin: 60px 80px;
+}
+.caja2{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    border-top: 5px solid blue;
+    border-right: 5px dashed white;
+    border-bottom: 5px dotted yellow;
+    border-left: 5px solid grey;
+}
