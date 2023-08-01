@@ -1,0 +1,28 @@
+<!-- OK -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular horas</title>
+    <script>
+        let horas = Number(prompt("Ingrese el total de horas trabajas en la semana:"));
+        let salario;
+
+        if(horas < 0){
+            alert("Ingreso un valor incorrecto");
+        }else if(horas <= 40){
+            salario = horas * 4;
+        }else{
+            salario = 40 * 4;
+            salario = salario + (horas-40) * 6;
+        }
+
+        if(salario != undefined)
+            alert("El salario semanal es: $" + salario);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

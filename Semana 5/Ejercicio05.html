@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let op = Number(prompt("Seleccione una opción:\n1. Suma\n2. Resta\n3. Multiplicación\n4. División"))
+        let num1, num2
+        if(op >= 1 && op <= 4){
+            num1 = Number(prompt("Ingrese el primer numero: "))
+            num2 = Number(prompt("Ingrese el segundo numero: "))
+        }
+        
+        switch(op){
+            case 1:
+                alert("La suma es: " + (num1 + num2))
+            break
+            case 2:
+                alert("La resta es: " + (num1 - num2))
+            break
+            case 3:
+                alert("La multiplicación es: " + num1 * num2)
+            break
+            case 4:
+                alert("La división es: " + num1 / num2)
+            break
+            default:
+                alert("Ingreso una opción invalida")
+            break
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cantidad = Number(prompt("Ingrese la cantidad de autos vendidos"))
+
+        let pago = 500
+
+        pago = pago + 15*cantidad
+
+        if(cantidad > 15){
+            pago = pago + 40
+        }
+
+        pago = pago - pago*0.05
+
+        alert("El pago mensual es: $ " + pago)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

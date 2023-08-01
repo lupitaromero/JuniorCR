@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function calcularSalarioSemanal(horasTrabajadas) {
+  const salarioPorHoraNormal = 4;
+  const salarioPorHoraExtra = 6;
+  const limiteHorasNormales = 40;
+  let salarioSemanal = 0;
+
+  if (horasTrabajadas <= limiteHorasNormales) {
+    salarioSemanal = horasTrabajadas * salarioPorHoraNormal;
+  } else {
+    const horasNormales = limiteHorasNormales;
+    const horasExtra = horasTrabajadas - limiteHorasNormales;
+    salarioSemanal = horasNormales * salarioPorHoraNormal + horasExtra * salarioPorHoraExtra;
+  }
+
+  return salarioSemanal;
+}
+
+// Pedimos al usuario que ingrese las horas trabajadas
+const horasTrabajadas = parseFloat(prompt("Ingrese la cantidad de horas trabajadas en la semana:"));
+
+// Calculamos el salario semanal
+const salarioSemanal = calcularSalarioSemanal(horasTrabajadas);
+
+// Mostramos el resultado
+console.log("El salario semanal del obrero es: $" + salarioSemanal);
+    </script>
+    
+</body>
+</html>

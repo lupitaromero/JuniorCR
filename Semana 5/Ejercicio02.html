@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let clave = Number(prompt("Ingrese la clave de la zona"))
+        let duracion = Number(prompt("Ingrese la duración de la llamada"))
+        let total
+
+        switch(clave){
+            case 12:
+                total = duracion * 2
+            break
+            case 15:
+                total = duracion * 2.20
+            break
+            case 18:
+                total = duracion * 4.50
+            break
+            case 19:
+                total = duracion * 3.50
+            break
+            case 23:
+            case 25:
+                total = duracion * 6
+            break
+            case 29:
+                total = duracion * 5
+            break
+        }
+
+        if(duracion < 30){
+            total = total - total * 0.10
+        }
+
+        alert("El total a pagar es: " + total)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

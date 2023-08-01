@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n, par = 0, impar = 0, sumaPar = 0, sumaImpar = 0
+
+        for(let i = 1; i <= 5; i++){
+           n = Number(prompt("Ingrese un numero"))
+           
+           if(n % 2 == 0){
+                par++
+                sumaPar = sumaPar + n
+           }
+           else{
+                impar++
+                sumaImpar = sumaImpar + n
+           }
+        }
+
+        console.log("Cantidad de pares: " + par)
+        console.log("Promedio de pares: " + sumaPar/par)
+        console.log("Cantidad de impares: " + impar)
+        console.log("Promedio de impares: " + sumaImpar/impar)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
